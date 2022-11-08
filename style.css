@@ -1,3 +1,15 @@
 .osszSpan{
     margin: 3%;
 }
+#form{
+    display: grid;
+}
+.baseinput{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#radios{
+    margin: auto;
+    margin-top: 3%;
+}

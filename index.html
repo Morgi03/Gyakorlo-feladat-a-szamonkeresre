@@ -12,10 +12,24 @@
 
 <body>
     <div id="osszesito">
-        <span class="osszSpan" id="KonyvekDB">A Könyvek darabszáma: 0</span>
-        <span class="osszSpan" id="IngyenesKonyvekDB">Az ingyenes könyvek darabszáma: 0</span>
-        <span class="osszSpan" id="KonyvekOsszAr">A Könyvek összesített ára: 0 $</span>
+        <span class="osszSpan">A Könyvek darabszáma: <span id="KonyvekDB">0</span></span>
+        <span class="osszSpan">Az ingyenes könyvek darabszáma: <span id="IngyenesKonyvekDB">0</span></span>
+        <span class="osszSpan">A Könyvek összesített ára: <span id="KonyvekOsszAr">0</span> $</span>
     </div>
+    <div id="form">
+        <div id="radios">
+            <label>Ebook könyv</label>
+            <input type="radio" name="konyvtipus" id="ebook_Tipus">
+            <label>Papír könyv</label>  
+        <input type="radio" name="konyvtipus" id="papir_Tipus" checked="true">
+    </div>
+        <input type="text" placeholder="ide írd a könyv nevét" class="baseinput">
+        <input type="number" placeholder="ide írd a könyv árát" class="baseinput">
+        <input type="text" placeholder="ide írd az isbn azonosítót" class="baseinput">
+        <input type="text" placeholder="ide írd a könyv súlyát (grammban)" class="baseinput">
+    </div>
+
+    <button id="submit">A</button>
 </body>
 
 </html>
