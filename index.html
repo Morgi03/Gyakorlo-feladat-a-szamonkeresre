@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
     <meta charset="UTF-8">
@@ -20,16 +20,26 @@
         <div id="radios">
             <label>Ebook könyv</label>
             <input type="radio" name="konyvtipus" id="ebook_Tipus">
-            <label>Papír könyv</label>  
-        <input type="radio" name="konyvtipus" id="papir_Tipus" checked="true">
-    </div>
-        <input type="text" placeholder="ide írd a könyv nevét" class="baseinput">
-        <input type="number" placeholder="ide írd a könyv árát" class="baseinput">
-        <input type="text" placeholder="ide írd az isbn azonosítót" class="baseinput">
-        <input type="text" placeholder="ide írd a könyv súlyát (grammban)" class="baseinput">
+            <label>Papír könyv</label>
+            <input type="radio" name="konyvtipus" id="papir_Tipus" checked="true">
+        </div>
+
+        <input type="text" placeholder="ide írd a könyv nevét" class="baseinput" id="name">
+        <input type="number" placeholder="ide írd a könyv árát" class="baseinput" id="price">
+        <input type="text" placeholder="ide írd az isbn azonosítót" class="baseinput" id="isbn">
+        <input type="number" placeholder="ide írd a könyv súlyát (grammban)" class="baseinput" id="weight">
+        <input type="number" placeholder="ide írd a könyv méretét (kilobyte-ban)" class="baseinput" id="size"
+            disabled="true">
     </div>
 
-    <button id="submit">A</button>
+    <button id="submit">Könyv felvétele</button>
+    <br>
+    <div id="errors">
+        <label id="error_name" class="error"></label>
+        <label id="error_price" class="error"></label>
+        <label id="error_isbn" class="error"></label>
+        <label id="error_weightANDsize" class="error"></label>
+    </div>
 </body>
 
 </html>

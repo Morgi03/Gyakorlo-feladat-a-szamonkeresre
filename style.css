@@ -13,3 +13,11 @@
     margin: auto;
     margin-top: 3%;
 }
+#errors{
+    display: grid;
+    margin-top: 2%;
+}
+.error{
+    background-color: brown;
+    color: antiquewhite;
+}
